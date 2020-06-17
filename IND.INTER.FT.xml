@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BankproML xmlns="urn:schema-bankpro-com:multichannel">
+   <SignonRq>
+      <SignonPswd>
+         <CustId>
+            <SPName>PIB</SPName>
+            <CustLoginId>PIB</CustLoginId>
+         </CustId>
+         <CustPswd>
+            <CryptType>DES1</CryptType>
+            <Pswd>NONE</Pswd>
+         </CustPswd>
+      </SignonPswd>
+      <ClientDt>2020/05/11 15:30:20</ClientDt>
+   </SignonRq>
+   <CommMsg>
+      <SPName>PIB</SPName>
+      <MsgId>IND.INTER.FT</MsgId>
+      <RqUID />
+      <T24_DATA>
+         <T24_EAI>
+            <T24_EAI_HDR>
+               <MSG_SYS_ID />
+               <HDR_MD5_DES />
+            </T24_EAI_HDR>
+            <T24_EAI_MSG>
+               <REQ_MSG_GRP>
+                  <REQ_MSG_OPT>
+                     <SIGN_ON_ID />
+                     <SIGN_ON_PSWD />
+                     <SIGN_ON_BRH>CN0010002</SIGN_ON_BRH>
+                     <PROC_FUNC>I</PROC_FUNC>
+                  </REQ_MSG_OPT>
+                  <REQ_MSG_DATA>
+                     <REQ_TXN_CODE>FUNDS.TRANSFER</REQ_TXN_CODE>
+                     <REQ_TXN_CODE_S>IB.IN.IND.TFR</REQ_TXN_CODE_S>
+                     <REQ_TXN_ID />
+                     <ITF_MSGKEY op="EQ">ITF001.0044</ITF_MSGKEY>
+                     <CHANNEL_ID op="EQ">PIB</CHANNEL_ID>
+                     <TERM_NO op="EQ">1234</TERM_NO>
+                     <EXT_BUSS_DATE op="EQ">20200511</EXT_BUSS_DATE>
+                     <EXT_REFERENCE op="EQ">202005111030</EXT_REFERENCE>
+                     <EXT_TXN_TIME op="EQ">20160504</EXT_TXN_TIME>
+                     <DEBIT_ACCT_NO mp="1" sp="1">000251000013048</DEBIT_ACCT_NO>
+                     <CREDIT_ACCT_NO mp="1" sp="1">000281000000077</CREDIT_ACCT_NO>
+                     <DEBIT_CURRENCY mp="1" sp="1">CNY</DEBIT_CURRENCY>
+                     <DEBIT_AMOUNT mp="1" sp="1">1000</DEBIT_AMOUNT>
+                     <CREDIT_CURRENCY mp="1" sp="1">CNY</CREDIT_CURRENCY>
+                     <L_TRANS_GATE mp="1" sp="1">PIB</L_TRANS_GATE>
+                     <C_PAYER_ACCT_NO mp="1" sp="1">000251000013048</C_PAYER_ACCT_NO>
+                     <C_PAYER_NAME mp="1" sp="1">APPLE</C_PAYER_NAME>
+                     <C_PAYEE_ACCT_NO mp="1" sp="1">000281000000077</C_PAYEE_ACCT_NO>
+                     <C_PAYEE_NAME mp="1" sp="1">ABC</C_PAYEE_NAME>
+                     <L_IB_PMT_M mp="1" sp="1">1</L_IB_PMT_M>
+                     <DEBIT_THEIR_REF mp="1" sp="1">貨款</DEBIT_THEIR_REF>
+                     <C_REMARK mp="1" sp="1">貨款</C_REMARK>
+                     <C_REMARKS mp="1" sp="1">FOR TEST</C_REMARKS>
+                     <L_CARD_NO mp="1" sp="1" />
+                  </REQ_MSG_DATA>
+               </REQ_MSG_GRP>
+               <REQ_PROC_INFO>
+                  <UNQ_REF_ID />
+                  <REQ_PROC_SYS />
+               </REQ_PROC_INFO>
+            </T24_EAI_MSG>
+         </T24_EAI>
+      </T24_DATA>
+   </CommMsg>
+</BankproML>
